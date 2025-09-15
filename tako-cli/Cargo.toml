@@ -1,0 +1,23 @@
+[package]
+name = "tako-cli"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+authors = [ "" ]
+description = "Tako command-line interface"
+homepage = ""
+repository = ""
+
+[dependencies]
+# tako-core = { path = "../tako-core", version = "0.1.0" }
+tako-core = { path = "../tako-core"}
+
+# External build dependencies
+anyhow = { workspace = true }
+clap = { workspace = true }
+crossterm = { workspace = true }
+toml = { workspace = true }
+
+[[bin]]
+name = "tk"
+path = "src/main.rs"

@@ -1,0 +1,18 @@
+[package]
+name = "tako-core"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+authors = [ "" ]
+description = "Tako command-line interface"
+homepage = ""
+repository = ""
+
+[dependencies]
+# tako-core = { path = "../tako-core", version = "0.1.0" }
+
+# External build dependencies
+anyhow = { workspace = true }
+crossterm = { workspace = true }
+ratatui = { workspace = true }
+
