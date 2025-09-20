@@ -9,17 +9,18 @@ homepage    = ""
 repository  = "https://github.com/DehKaine/tako"
 
 [dependencies]
-tako-component = { path = "../tako-component"}
 tako-config    = { path = "../tako-config"}
 tako-core      = { path = "../tako-core"}
 tako-macro     = { path = "../tako-macro"}
+tako-widgets    = { path = "../tako-widgets"}
 
 # External build dependencies
-anyhow     = { workspace = true }
-crossterm  = { workspace = true }
-ratatui    = { workspace = true }
-scopeguard = { workspace = true }
-tokio      = { workspace = true }
+anyhow       = { workspace = true }
+crossterm    = { workspace = true }
+ratatui      = { workspace = true }
+# scopeguard   = { workspace = true }
+tokio        = { workspace = true }
+tokio-stream = { workspace = true }
 
 # Logging
 tracing = { workspace = true }

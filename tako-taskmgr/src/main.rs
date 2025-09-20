@@ -1,14 +1,12 @@
-tako_macro::pub_mod!(package);
-tako_macro::flat_mod!(args);
+tako_macro::pub_mod!(app confirm help input mgr notify);
+tako_macro::flat_mod!(router ui);
 
 use std::process::ExitCode;
 
-use clap::Parser;
+// use clap::Parser;
 use anyhow::Result;
-use tako_core::App;
 
-fn main() -> Result<()> {
-    let mut app = App::new();
-    app.run()?;
-    Ok(())
+#[tokio::main]
+async fn main() -> Result<()> {
+    app::App::serve().await
 }
