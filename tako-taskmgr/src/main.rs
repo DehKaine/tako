@@ -1,7 +1,5 @@
 tako_macro::pub_mod!(app confirm help input mgr notify);
-tako_macro::flat_mod!(router ui);
-
-use std::process::ExitCode;
+tako_macro::flat_mod!(router);
 
 // use clap::Parser;
 use anyhow::Result;
