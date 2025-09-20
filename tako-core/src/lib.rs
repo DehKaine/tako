@@ -52,7 +52,7 @@ impl App {
                     // 只响应按下（忽略长按/重复）
                     if key.kind == KeyEventKind::Press {
                         match key.code {
-                            KeyCode::Char('q') | KeyCode::Esc => self.running = false,
+                            KeyCode::Char('q') => self.running = false,
                             KeyCode::Tab => {
                                 self.focused = match self.focused {
                                     Pane::Left => Pane::Right,

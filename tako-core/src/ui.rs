@@ -11,12 +11,18 @@ use super::Pane;
 pub fn draw(frame: &mut Frame<'_>, focused: Pane) {
     let chunks = Layout::default()
         .direction(Direction::Horizontal)
-        .constraints([Constraint::Percentage(50), Constraint::Percentage(50)])
+        .constraints([Constraint::Percentage(55), Constraint::Percentage(45)])
         .split(frame.size());
 
     // 左 Pane
-    let left_title = match focused { Pane::Left => "Left (focused)", _ => "Left" };
-    let left_style = match focused { Pane::Left => Style::default().fg(Color::Yellow), _ => Style::default() };
+    let left_title = match focused {
+        Pane::Left => "Left (focused)",
+        _ => "Left" 
+    };
+    let left_style = match focused { 
+        Pane::Left => Style::default().fg(Color::Yellow),
+        _ => Style::default() 
+    };
     let left_block = Block::default()
         .title(left_title)
         .borders(Borders::ALL)

@@ -1,0 +1,8 @@
+[package]
+name        = "tako-macro"
+version     = "0.0.1"
+edition     = "2024"
+license     = "MIT"
+authors     = [ "DehKaine" ]
+description = "Tako macros"
+repository  = "https://github.com/DehKaine/tako"

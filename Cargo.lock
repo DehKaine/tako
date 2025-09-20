@@ -703,17 +703,22 @@ dependencies = [
  "clap",
  "crossterm 0.29.0",
  "tako-core",
+ "tako-macro",
  "toml",
 ]
 
 [[package]]
 name = "tako-core"
-version = "0.1.0"
+version = "0.0.1"
 dependencies = [
  "anyhow",
  "crossterm 0.29.0",
  "ratatui",
 ]
+
+[[package]]
+name = "tako-macro"
+version = "0.0.1"
 
 [[package]]
 name = "toml"

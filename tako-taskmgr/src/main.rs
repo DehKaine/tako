@@ -3,7 +3,7 @@ tako_macro::flat_mod!(args);
 
 use std::process::ExitCode;
 
-// use clap::Parser;
+use clap::Parser;
 use anyhow::Result;
 use tako_core::App;
 

@@ -1,0 +1,29 @@
+[package]
+name        = "tako-taskmgr"
+version     = "0.0.1"
+edition     = "2024"
+license     = "MIT"
+authors     = [ "DehKaine <kouteki9@gmail.com>" ]
+description = "Tako command-line interface"
+homepage    = ""
+repository  = "https://github.com/DehKaine/tako"
+
+[dependencies]
+tako-component = { path = "../tako-component"}
+tako-config    = { path = "../tako-config"}
+tako-core      = { path = "../tako-core"}
+tako-macro     = { path = "../tako-macro"}
+
+# External build dependencies
+anyhow     = { workspace = true }
+crossterm  = { workspace = true }
+ratatui    = { workspace = true }
+scopeguard = { workspace = true }
+tokio      = { workspace = true }
+
+# Logging
+tracing = { workspace = true }
+
+[[bin]]
+name = "tako"
+path = "src/main.rs"
