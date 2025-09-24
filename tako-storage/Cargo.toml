@@ -1,10 +1,10 @@
 [package]
-name        = "tako-widgets"
+name        = "tako-storage"
 version     = "0.0.1"
 edition     = "2024"
 license     = "MIT"
 authors     = [ "DehKaine" ]
-description = "Tako component"
+description = "Tako storage"
 repository  = "https://github.com/DehKaine/tako"
 
 [dependencies]
@@ -16,4 +16,5 @@ crossterm   = { workspace = true }
 directories = { workspace = true }
 ratatui     = { workspace = true }
 toml        = { workspace = true }
+tracing     = { workspace = true }
 
