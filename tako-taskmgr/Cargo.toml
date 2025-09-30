@@ -12,6 +12,7 @@ repository  = "https://github.com/DehKaine/tako"
 tako-config    = { path = "../tako-config"}
 tako-core      = { path = "../tako-core"}
 tako-macro     = { path = "../tako-macro"}
+tako-shared     = { path = "../tako-shared"}
 tako-widgets    = { path = "../tako-widgets"}
 
 # External build dependencies

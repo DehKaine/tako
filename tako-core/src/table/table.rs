@@ -15,15 +15,18 @@ pub struct TaskRow {
     pub age: String,
 }
 
+#[derive(Debug, Clone, Serialize, Deserialize, Default)]
 pub struct Radio {
 
 }
 
 // FixRadio and MutRadio
+#[derive(Debug, Clone, Serialize, Deserialize, Default)]
 pub struct MutRadio {
 
 }
 
+#[derive(Debug, Clone, Serialize, Deserialize, Default)]
 pub struct MultiSelect {
 
 }

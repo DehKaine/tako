@@ -922,6 +922,17 @@ name = "tako-macro"
 version = "0.0.1"
 
 [[package]]
+name = "tako-shared"
+version = "0.0.1"
+dependencies = [
+ "anyhow",
+ "crossterm 0.29.0",
+ "serde",
+ "tako-macro",
+ "tokio",
+]
+
+[[package]]
 name = "tako-taskmgr"
 version = "0.0.1"
 dependencies = [
@@ -931,6 +942,7 @@ dependencies = [
  "tako-config",
  "tako-core",
  "tako-macro",
+ "tako-shared",
  "tako-widgets",
  "tokio",
  "tokio-stream",

@@ -6,5 +6,6 @@ use anyhow::Result;
 
 #[tokio::main]
 async fn main() -> Result<()> {
+    tako_shared::event::Event::init();
     app::App::serve().await
 }
